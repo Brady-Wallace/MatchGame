@@ -1,0 +1,6 @@
+[submodule "GameOfMatch/Assets/Tools/"]
+	path = GameOfMatch/Assets/Tools/
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools
+[submodule "GameOfMatch/Assets/Tools"]
+	path = GameOfMatch/Assets/Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools
