@@ -4,3 +4,6 @@
 [submodule "GameOfMatch/Assets/Tools"]
 	path = GameOfMatch/Assets/Tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools
+[submodule "GameOfMatch/Assets/MyOldCode"]
+	path = GameOfMatch/Assets/MyOldCode
+	url = https://github.com/Brady-Wallace/DGM-1610
