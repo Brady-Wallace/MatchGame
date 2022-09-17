@@ -25,7 +25,7 @@ public class DraggableHevaiour : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
             position = cameraObj.ScreenToWorldPoint(Input.mousePosition) + offset;
-            Debug.Log("Drag");
+            transform.position = position;
         }
     }
 
