@@ -1,19 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ColorMatchBehaviour : MatchBehaviour
 {
-    public ColorIDDataList ColorIDDataListObj;
+    public ColorIDDataList colorIDDataListObj;
 
     private void Awake()
     {
-        idObj = colorIDDataListObj.currentColor;
+        idobj = colorIDDataListObj.currentColor;
     }
 
-    public void ChangeColor(SpirteRenderer renderer)
+    public void ChangeColor(SpriteRenderer renderer)
     {
-        var newColor = idObj as ColorID;
+        var newColor = idobj as ColorID;
         renderer.color = newColor.value;
     }
 }
