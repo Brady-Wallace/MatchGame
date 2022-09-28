@@ -13,6 +13,12 @@ public class CoroutinesBehaviour : MonoBehaviour
     public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, repeatUnitlFalseEvent;
     public bool canRun;
 
+    public bool CanRun
+    {
+        get => canRun;
+        set => canRun = value;
+    }
+
     private void Start()
     {
         wfsObj = new WaitForSeconds(secs);
@@ -40,13 +46,13 @@ public class CoroutinesBehaviour : MonoBehaviour
 
     public void StartRepeatingUntilFalse()
     {
-        canRun = true;
+        CanRun = true;
         StartCoroutine(RepeatUntilFalse());
     }
 
     private IEnumerator RepeatUntilFalse()
     {
-        while (canRun)
+        while (CanRun)
         {
             yield return wfsObj;
             repeatUnitlFalseEvent.Invoke();
